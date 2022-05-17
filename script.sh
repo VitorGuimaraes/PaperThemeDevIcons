@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo cp dockerfile.xml /usr/share/mime/packages
+sudo cp -v dockerfile.xml /usr/share/mime/packages
 
 cd icons 
 
@@ -14,7 +14,7 @@ echo $dest | xargs -n 1 sudo cp -v text-x-script.png
 echo $dest | xargs -n 1 sudo cp -v text-html.png
 echo $dest | xargs -n 1 sudo cp -v text-x-matlab.png
 
-sudo cp *.svg /usr/share/icons/hicolor/scalable/mimetypes
+sudo cp -v *.svg /usr/share/icons/hicolor/scalable/mimetypes
 
 sudo gtk-update-icon-cache /usr/share/icons/hicolor/ -f
 
